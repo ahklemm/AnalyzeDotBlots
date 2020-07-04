@@ -1,4 +1,5 @@
-# AnalyzeProteinArrays
+# AnalyzeDotArrays
+ImageJ macro scripts to measure intensities in dot blots in e.g. protein arrays.
 
 ## Documentation DotBlotAnalysis.ijm
 * Simplifies the intensity measurements of dot blots in e.g. protein arrays.
