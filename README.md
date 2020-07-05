@@ -47,5 +47,5 @@ for(full=1; full<=24; full++){
 ```
 In the end, the single Rows are concatenated to one big Array, which is the output of the createSpotIDArray() function.
 ```javascript
-Cytokine_Array = Array.concat(A, B, C, D, E, F);
+ID_Array = Array.concat(A, B, C, D, E, F);
 ```
