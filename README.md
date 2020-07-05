@@ -19,7 +19,7 @@ For vendor template that looks like shown below you can use the macro script Mas
 
 The MaskGenerator.ijm creates a labelled mask formated as needed for the analysis. That means the output is a labelled mask where the spot A1 has the gray value = 1, A2 has gray value = 2 etc. . 
 The output is displayed using the glasbey_on_dark LUT to increase the visibility of each single spot:
-![glasbey_output](/images_for_documentation/glasbey_output.png)
+![glasbey_output](/images_for_documentation/example_panel.png)
 
 ### 2) Adapt the macro DotBlotAnalysis.ijm
 The function createSpotIDArray() needs to be adapted for each specific panel.
