@@ -4,7 +4,7 @@
 //input: original image of membrane to be analyzed and mask image. Mask is a labelledMask of the dot array.
 //output: saves in the original folder: results (_results.xls), control image (_detectedWells.tif), saved roi-manager (_ROIs.zip)
 //anna.klemm@it.uu.se, BioImage Informatics Facility, SciLifeLab, Sweden.
-
+//The code can be re-used according to the creative common licence: CC BY SA
 
 //specific preparation
 #@ ImagePlus (label="Name of the mask-Image", description="Enter the name of the labelled mask encoding the blot array") maskImp
