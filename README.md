@@ -10,4 +10,4 @@ ImageJ macro scripts to measure intensities in dot blots in e.g. protein arrays.
 * connected forum.image.sc thread: https://forum.image.sc/t/dot-blot-analysis/7106
 
 The image of the dot blot was provided by Katja Eubler, Mayerhofer-lab, BMC, LMU Munich, Germany.
-Code and example images are available under the creative common licence CC BY SA.
+//The code can be re-used according to license: BSD-3-Clause.
