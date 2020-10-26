@@ -3,7 +3,7 @@
 
 //output: labelled mask, called "Mask.tif"
 //created by: anna.klemm@it.uu.se, BioImage Informatics Facility, SciLifeLab, Sweden.
-//The code can be re-used according to the creative common licence: CC BY SA.
+//The code can be re-used according to license: BSD-3-Clause
 
 //preparations
 path_output = getDirectory("Choose a Directory for Saving the Image");

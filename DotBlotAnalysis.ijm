@@ -4,7 +4,7 @@
 //input: original image of membrane to be analyzed and mask image. Mask is a labelledMask of the dot array.
 //output: saves in the original folder: results (_results.xls), control image (_detectedWells.tif), saved roi-manager (_ROIs.zip)
 //anna.klemm@it.uu.se, BioImage Informatics Facility, SciLifeLab, Sweden.
-//The code can be re-used according to the creative common licence: CC BY SA
+//The code can be re-used according to license: BSD-3-Clause
 
 //specific preparation
 #@ ImagePlus (label="Name of the mask-Image", description="Enter the name of the labelled mask encoding the blot array") maskImp
@@ -149,8 +149,14 @@ run("Convert to Mask");
 run("Watershed");
 run("Analyze Particles...", "add");
 
+
 //get centroids, make new equally sized ROIs, update manager and rename
 IDnames = createSpotIDArray(nSpots); //createSpotIDArray() creates an array that contains the names of each spot
+
+//give warning if there are more particles than expected
+if (roiManager("Count") != IDnames.length) {
+	waitForUser("Incorrect number of ROIs detected, please check the ROI manager.");
+}
 
 setBatchMode(true);
 for(r = 0; r < roiManager("Count"); r++){
