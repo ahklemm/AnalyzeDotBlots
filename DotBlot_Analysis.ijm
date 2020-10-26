@@ -1,4 +1,4 @@
-//DotBlotAnalysis.ijm
+//DotBlot_Analysis.ijm
 //simplifies use of "Landmark Correspondences" plugin to analyse dot blots.
 //subtracts background and inverts the original dot blot image before measurement.
 //input: original image of membrane to be analyzed and mask image. Mask is a labelledMask of the dot array.
